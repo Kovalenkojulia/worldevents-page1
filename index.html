@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050505">
+  <meta name="description" content="World Events — dance organizations and championships around the world.">
+  <title>World Events | Dance Around the World</title>
+  <style>
+    :root { color-scheme: dark; --bg:#050505; --panel:#111; --line:#292929; --white:#f7f7f7; --muted:#aaa; --teal:#8fd4d2; }
+    * { box-sizing:border-box; }
+    body { margin:0; min-height:100vh; background:radial-gradient(ellipse at top, #171717 0%, var(--bg) 54%); color:var(--white); font-family:Arial, Helvetica, sans-serif; }
+    main { width:min(1080px, 100%); margin:0 auto; padding:44px 22px 34px; }
+    header { text-align:center; margin:0 auto 36px; }
+    .brand { width:min(310px, 78%); height:auto; display:block; margin:0 auto 20px; }
+    .eyebrow { color:var(--teal); text-transform:uppercase; letter-spacing:.32em; font-size:.76rem; margin:0 0 12px; }
+    h1 { margin:0; font-size:clamp(1.55rem, 4vw, 2.5rem); letter-spacing:.13em; font-weight:800; }
+    .intro { color:#bcbcbc; line-height:1.6; margin:13px auto 0; max-width:560px; font-size:.98rem; }
+    .grid { display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:18px; }
+    .card { min-height:230px; display:flex; flex-direction:column; align-items:center; justify-content:space-between; gap:18px; padding:22px; background:linear-gradient(145deg,#151515,#0c0c0c); border:1px solid var(--line); border-radius:16px; text-decoration:none; color:inherit; transition:transform .18s ease,border-color .18s ease,background .18s ease; }
+    .card:hover, .card:focus-visible { transform:translateY(-3px); border-color:#777; background:#171717; outline:none; }
+    .logo-wrap { width:100%; height:142px; display:flex; align-items:center; justify-content:center; overflow:hidden; }
+    .logo { display:block; width:100%; max-width:460px; max-height:140px; object-fit:contain; }
+    .logo.square { max-width:140px; max-height:140px; }
+    .cta { display:flex; align-items:center; justify-content:center; gap:10px; width:100%; border:1px solid #3b3b3b; border-radius:9px; padding:12px 14px; color:#fff; font-size:.88rem; font-weight:700; letter-spacing:.04em; }
+    .arrow { color:var(--teal); font-size:1.1rem; }
+    footer { text-align:center; color:#777; font-size:.75rem; letter-spacing:.2em; margin-top:30px; text-transform:uppercase; }
+    @media (max-width:620px) { main{padding:30px 15px 25px;} .grid{grid-template-columns:1fr; gap:14px;} .card{min-height:210px;} .logo-wrap{height:128px;} .logo{max-height:125px;} }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <img class="brand" src="assets/world-events-logo.jpg" alt="WE World Events — Dance Around the World" onerror="this.style.display='none'">
+      <p class="eyebrow">Dance around the world</p>
+      <h1>WORLD EVENTS</h1>
+      <p class="intro">Discover our dance organizations and championships.</p>
+    </header>
+    <section class="grid" aria-label="Our dance organizations">
+      <a class="card" href="https://www.europedancemovement.com" target="_blank" rel="noopener noreferrer" aria-label="Visit Europe Dance Movement website">
+        <div class="logo-wrap"><img class="logo" src="assets/europedance.jpg" alt="Europe Dance Movement logo"></div>
+        <div class="cta">EUROPE DANCE MOVEMENT <span class="arrow">↗</span></div>
+      </a>
+      <a class="card" href="https://www.europehiphopmovement.com" target="_blank" rel="noopener noreferrer" aria-label="Visit Europe Hip Hop Movement website">
+        <div class="logo-wrap"><img class="logo" src="assets/europehiphop.jpg" alt="Europe Hip Hop Movement logo"></div>
+        <div class="cta">EUROPE HIP HOP MOVEMENT <span class="arrow">↗</span></div>
+      </a>
+      <a class="card" href="https://www.dancingstarsjunior.com" target="_blank" rel="noopener noreferrer" aria-label="Visit Dancing Stars Junior website">
+        <div class="logo-wrap"><img class="logo" src="assets/dancingstarsjunior.jpg" alt="Dancing Stars Junior logo"></div>
+        <div class="cta">DANCING STARS JUNIOR <span class="arrow">↗</span></div>
+      </a>
+      <a class="card" href="https://www.spaindanceinternational.com" target="_blank" rel="noopener noreferrer" aria-label="Visit Spain Dance International website">
+        <div class="logo-wrap"><img class="logo" src="assets/spaindanceinternational.jpg" alt="Spain Dance International logo"></div>
+        <div class="cta">SPAIN DANCE INTERNATIONAL <span class="arrow">↗</span></div>
+      </a>
+    </section>
+    <footer>World Events · Dance around the world</footer>
+  </main>
+</body>
+</html>
